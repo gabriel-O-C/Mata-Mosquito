@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>Mata-Mosquito</title>
+</head>
+<body onresize="screenArea()">
+    <div class="panel">
+        <div class="life-points">
+            <img id="lp1" src="imagens/coracao_cheio.png" alt="no life-points">
+            <img id="lp2"  src="imagens/coracao_cheio.png" alt="life-points">
+            <img id="lp3" src="imagens/coracao_cheio.png" alt="life-points">
+
+
+        </div>
+        <div class="timer">Tempo Restante: <span id="time"></span> </div>
+    </div>
+
+
+   <script>
+        document.getElementById('time').innerHTML = time;
+       var createFly = setInterval(function(){
+        randomPosition();
+
+       }, createFlyTime)
+   </script>
+</body>
+</html>
